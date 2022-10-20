@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <input id="first" type="number">
+        </div>
+        <div class="select">
+            <select id="select" name="select" id="operation">
+                <option disabled selected value="">Select</option>
+                <option value="add">+</option>
+                <option value="sub">-</option>
+                <option value="divide">&#247</option>
+                <option value="multi">x</option>
+            </select>
+        </div>
+        <div class="sec">
+            <input id="sec" type="number">
+        </div>
+        <br>
+        <div class="gen">
+            <button onclick="calcute()">click</button>
+            <input id="ans" disabled type="number">
+        </div>
+
+        <p style="color: #ff0000;" id="err"></p>
+    </div>
+    <script src="./calc.js"></script>
+</body>
+
+</html>
